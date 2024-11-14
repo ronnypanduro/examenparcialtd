@@ -1,4 +1,4 @@
-package com.examenparcial.examenparcial.respository;
+package com.examenparcial.examenparcial.repository;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
