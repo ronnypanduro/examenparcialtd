@@ -1,5 +1,8 @@
 package com.examenparcial.examenparcial.model;
 
+import java.math.BigDecimal;
+
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -19,8 +22,12 @@ public class AlumnoModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    @Column(length = 100)
     private String nombre;
-    private float nota;
+
+    @Column(precision = 10, scale = 2, columnDefinition = "decimal(10,2)")
+    private BigDecimal nota;
+    
     
 
 }
