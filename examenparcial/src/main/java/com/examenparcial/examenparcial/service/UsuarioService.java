@@ -1,10 +1,17 @@
 package com.examenparcial.examenparcial.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-public class UsuarioService {
-@Autowired
+
+import com.examenparcial.examenparcial.model.UsuarioModel;
+import com.examenparcial.examenparcial.repository.IUsuarioRepository;
+
+@Service
+public class UsuarioService implements IUsuarioService {
+
+    @Autowired
     IUsuarioRepository repository;
 
     @Override
