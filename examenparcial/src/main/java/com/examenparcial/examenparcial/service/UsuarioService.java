@@ -8,8 +8,17 @@ import org.springframework.stereotype.Service;
 import com.examenparcial.examenparcial.model.UsuarioModel;
 import com.examenparcial.examenparcial.repository.IUsuarioRepository;
 
+
 @Service
 public class UsuarioService implements IUsuarioService {
+
+    @Autowired
+    IUsuarioRepository repository;
+
+    @Override
+    public List<UsuarioModel> findAll() {
+        return (List<UsuarioModel>) repository.findAll();
+    }
 
     @Autowired
     IUsuarioRepository repository;
