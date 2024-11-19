@@ -17,7 +17,7 @@ import com.examenparcial.examenparcial.service.AlumnoService;
 
 
 @RestController
-@RequestMapping("usuario")
+@RequestMapping("rest/alumno")
 public class AlumnoController {
 
     @Autowired
@@ -27,6 +27,7 @@ public class AlumnoController {
     public List<AlumnoModel> getAll() {
         return alumnoService.getAlumnos();
     }
+
     @PostMapping("/create")
     public AlumnoModel create(@RequestBody AlumnoModel model) {
         return alumnoService.guardarAlumno(model);
@@ -43,6 +44,9 @@ public class AlumnoController {
     }
     @GetMapping("/{id}")
     public AlumnoModel findById(@PathVariable("id") int id) {
+        
         return alumnoService.getAlumnoId(id);
+
+        
     }
 }
