@@ -353,3 +353,5 @@ org.springframework.web.servlet.resource.NoResourceFoundException: No static res
 2024-11-18 21:46:58 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-3070"]
 2024-11-18 21:46:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 3070 (http) with context path '/'
 2024-11-18 21:46:58 [main] INFO  c.e.e.ExamenparcialApplication - Started ExamenparcialApplication in 6.93 seconds (process running for 7.328)
+2024-11-19 02:33:40 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h42m12s170ms990µs100ns).
+2024-11-19 13:06:30 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10h32m54s84ms94µs900ns).
